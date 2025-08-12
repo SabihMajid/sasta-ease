@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sasta-Ease E-commerce Design System */
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --primary: 122 50% 33%;          /* Forest Green #2E7D32 */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 122 50% 45%;
+    --primary-dark: 122 60% 25%;
+    
+    /* Accent Colors */
+    --accent-gold: 51 100% 50%;      /* Light Golden #FFD700 */
+    --accent-gold-foreground: 0 0% 0%;
+    --accent-gold-muted: 51 100% 35%;
+    
+    /* Neutral System */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;           /* Pure Black #000000 */
+    --background-soft: 0 0% 98%;
+    --foreground-muted: 0 0% 45%;
+    
+    /* Component Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --card-border: 0 0% 90%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 122 50% 33%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --success: 122 50% 33%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Design System Enhancements */
+    --gradient-primary: linear-gradient(135deg, hsl(122 50% 33%), hsl(122 50% 45%));
+    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%), hsl(51 100% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(122 50% 33%) 0%, hsl(122 60% 25%) 50%, hsl(0 0% 0%) 100%);
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
+    --shadow-gold: 0 5px 20px -5px hsl(51 100% 50% / 0.3);
+    --shadow-card: 0 4px 12px -2px hsl(0 0% 0% / 0.08);
+    
+    --radius: 0.75rem;
+    --radius-sm: 0.5rem;
+    --radius-lg: 1rem;
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    --background-soft: 0 0% 10%;
+    --foreground-muted: 0 0% 65%;
+    
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --card-border: 0 0% 20%;
+    
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(122 50% 33%) 0%, hsl(122 60% 25%) 50%, hsl(0 0% 8%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
